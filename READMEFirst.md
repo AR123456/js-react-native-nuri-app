@@ -1,4 +1,4 @@
-# sticker-smash
+# JS nutri app
 
 development with expo
-This is the expo Sticker Smash App
+This is the expo Nutri App
