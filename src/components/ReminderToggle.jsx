@@ -18,7 +18,7 @@ const ReminderToggle = () => {
     };
     load();
   }, []);
-  const toggle = async (value: boolean) => {
+  const toggle = async (value) => {
     if (value) {
       const granted = await requestPermissions();
       if (!granted) return;

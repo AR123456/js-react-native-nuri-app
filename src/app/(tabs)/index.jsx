@@ -34,7 +34,7 @@ export default function HomeScreen() {
       <MacroGrid meals={meals} />
       <CopyButton meals={meals} />
       {/* TODO reminder toggle not supported expo go */}
-      <ReminderToggle />
+      {/* <ReminderToggle /> */}
       <RecentMeals meals={meals} onDelete={loadMeals} />
     </ScrollView>
   );
