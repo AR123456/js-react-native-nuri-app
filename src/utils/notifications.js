@@ -11,7 +11,7 @@ Notifications.setNotificationHandler({
   }),
 });
 // request permissions
-export const requestPermissions = async (): Promise<boolean> => {
+export const requestPermissions = async () => {
   const { status } = await Notifications.requestPermissionsAsync();
 
   return status === "granted";
