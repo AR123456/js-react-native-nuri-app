@@ -10,28 +10,8 @@ import {
 } from "react-native";
 import { deleteMeal } from "@/storage/meals";
 
-import { colors } from "@/styles/global";
-
-type MealItemProps = {
-  id: string;
-  name: string;
-  calories: number;
-  protein: number;
-  carbs: number;
-  fat: number;
-  onDelete: () => void;
-};
-
 // take meal name and its macros , display it
-const MealItem = ({
-  id,
-  name,
-  calories,
-  protein,
-  carbs,
-  fat,
-  onDelete,
-}: MealItemProps) => {
+const MealItem = ({ id, name, calories, protein, carbs, fat, onDelete }) => {
   const handleLongPress = () => {
     Alert.alert("Delete Meal", `Are you sure you want to delete "${name}"?`, [
       { text: "Cancel", style: "cancel" },

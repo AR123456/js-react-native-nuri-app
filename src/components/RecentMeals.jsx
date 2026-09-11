@@ -1,12 +1,8 @@
-import { Meal } from "@/storage/meals";
 import { globalStyles } from "@/styles/global";
 import { StyleSheet, Text, View } from "react-native";
 import MealItem from "./MealItem";
-type RecentMealsProps = {
-  meals: Meal[];
-  onDelete: () => void;
-};
-const RecentMeals = ({ meals, onDelete }: RecentMealsProps) => {
+
+const RecentMeals = ({ meals, onDelete }) => {
   return (
     <View style={{ marginTop: 30 }}>
       <Text style={globalStyles.sectionTitle}>Recent Meals</Text>
