@@ -1,13 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
-type MacroCardProps = {
-  label: string;
-  value: string;
-  goal: string;
-  color: string;
-};
+
 // confusing name - square for each macro nutrient and cals
-const MacroCard = ({ label, value, goal, color }: MacroCardProps) => {
+const MacroCard = ({ label, value, goal, color }) => {
   return (
     <View style={[styles.card, { borderLeftColor: color }]}>
       <Text style={styles.label}>{label}</Text>
