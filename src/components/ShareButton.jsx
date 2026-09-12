@@ -4,10 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Meal } from "@/storage/meals";
 import { colors } from "@/styles/global";
 
-type ShareButtonProps = {
-  meals: Meal[];
-};
-const ShareButton = ({ meals }: ShareButtonProps) => {
+const ShareButton = ({ meals }) => {
   const handleShare = async () => {
     const totals = meals.reduce(
       (acc, meal) => ({
