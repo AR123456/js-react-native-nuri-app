@@ -2,7 +2,7 @@ import CopyButton from "@/components/CopyButton";
 import HomeHeader from "@/components/HomeHeader";
 import MacroGrid from "@/components/MacroGrid";
 import RecentMeals from "@/components/RecentMeals";
-import ReminderToggle from "@/components/ReminderToggle";
+// import ReminderToggle from "@/components/ReminderToggle";
 import ShareButton from "@/components/ShareButton";
 import { getMeals } from "@/storage/meals";
 import { globalStyles } from "@/styles/global";
