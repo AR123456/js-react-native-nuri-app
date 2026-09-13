@@ -123,9 +123,17 @@ export default function EditMealScreen() {
           onChangeText={setFat}
         />
       </View>
-      <TouchableOpacity style={styles.button} onPress={handleEditMeal}>
-        <Text style={styles.buttonText}>Save Updates Meal</Text>
-      </TouchableOpacity>
+      <View style={styles.rowBtn}>
+        <TouchableOpacity style={styles.button} onPress={handleEditMeal}>
+          <Text style={styles.buttonText}>Save</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push("/")}
+        >
+          <Text style={styles.buttonText}>Cancel</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -157,5 +165,10 @@ const styles = StyleSheet.create({
     color: colors.background,
     fontSize: 16,
     fontWeight: "bold",
+  },
+  rowBtn: {
+    flexDirection: "row",
+
+    justifyContent: "space-evenly",
   },
 });
