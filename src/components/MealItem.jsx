@@ -47,7 +47,7 @@ const MealItem = ({ id, name, calories, protein, carbs, fat, onDelete }) => {
       <Text style={styles.macros}>
         {calories} cal • {protein}g P • {carbs}g C • {fat}g F
       </Text>
-      <Pressable onPress={handleEdit}>
+      <Pressable onPress={handleEdit} style={styles.pencil}>
         <Text style={styles.yellow}>
           Edit <Ionicons name="pencil" size={14} color={colors.primary} />
         </Text>
@@ -76,4 +76,5 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   yellow: { color: "yellow" },
+  pencil: { marginLeft: "85%" },
 });
