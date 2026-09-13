@@ -5,9 +5,12 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
   Pressable,
 } from "react-native";
+
+import { colors } from "@/styles/global";
+import { Ionicons } from "@expo/vector-icons";
+
 import { deleteMeal } from "@/storage/meals";
 
 // take meal name and its macros , display it
@@ -45,7 +48,9 @@ const MealItem = ({ id, name, calories, protein, carbs, fat, onDelete }) => {
         {calories} cal • {protein}g P • {carbs}g C • {fat}g F
       </Text>
       <Pressable onPress={handleEdit}>
-        <Text style={styles.red}>Edit meal here</Text>
+        <Text style={styles.yellow}>
+          Edit <Ionicons name="pencil" size={14} color={colors.primary} />
+        </Text>
       </Pressable>
     </TouchableOpacity>
   );
@@ -70,5 +75,5 @@ const styles = StyleSheet.create({
     color: "#a0a0b0",
     marginTop: 4,
   },
-  red: { color: "yellow" },
+  yellow: { color: "yellow" },
 });
